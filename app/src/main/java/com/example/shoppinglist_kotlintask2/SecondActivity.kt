@@ -25,27 +25,15 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.second_list_item)
 
-       /*val product = intent.getParcelableExtra<ShoppingList>(SecondViewHolder.productKey)
-        itemDescription.text = product.toString()*/
-
-       /* main_recycler.adapter = ShoppingAdapter(populate())
-        main_recycler.layoutManager = LinearLayoutManager(this)*/
-
-
 
         val intent = intent.getParcelableExtra<ShoppingList>(SecondViewHolder.productKey)
         intent?.let{
 
-            item_name.text = itemName.toString()
-            item_price.text = itemPrice.toString()
-            item_image.setImageResource(itemImage)
-            itemDescription.text = intent.toString()
-
-            /*fun bind (itemDescription: String){
-                itemDescription.text = "Rice., white, parboiled, destoned, polished"
-            }*/
+            itemName.text = it.itemName
+            itemImage.setImageResource(it.itemImage)
+            itemDescription.text = it.itemDescription
+            itemPrice.text = it.itemPrice
         }
-
     }
 }
 
