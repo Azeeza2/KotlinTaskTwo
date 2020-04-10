@@ -10,10 +10,10 @@ import kotlinx.android.parcel.Parcelize
 
 data class ShoppingList( val itemImage: Int, val itemName: String, val itemPrice: String, val itemDescription:String): Parcelable{
     override fun writeToParcel(parcel: Parcel, flags: Int) {
-        parcel.readInt().toString(itemImage)
-        parcel.readString().toString(itemName)
-        parcel.readString().toString(itemPrice)
-        parcel.readString().toString(itemDescription)
+        parcel.writeInt(itemImage)
+        parcel.writeString().toString(itemName)
+        parcel.writeString().toString(itemPrice)
+        parcel.writeString().toString(itemDescription)
     }
 
     override fun describeContents(): Int {

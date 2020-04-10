@@ -25,9 +25,11 @@ class SecondActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.second_list_item)
 
-      /*  val product = intent.extras.getParcelable<ShoppingList>(SecondViewHolder.productKey)
+       /*val product = intent.getParcelableExtra<ShoppingList>(SecondViewHolder.productKey)
         itemDescription.text = product.toString()*/
 
+       /* main_recycler.adapter = ShoppingAdapter(populate())
+        main_recycler.layoutManager = LinearLayoutManager(this)*/
 
 
 
@@ -42,8 +44,6 @@ class SecondActivity : AppCompatActivity() {
             /*fun bind (itemDescription: String){
                 itemDescription.text = "Rice., white, parboiled, destoned, polished"
             }*/
-
-
         }
 
     }
