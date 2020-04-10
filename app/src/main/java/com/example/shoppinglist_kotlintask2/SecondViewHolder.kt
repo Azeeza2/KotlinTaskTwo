@@ -14,9 +14,8 @@ import kotlinx.android.synthetic.main.shopping_list_item.view.*
 class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
 
     companion object{
-        const val productKey = "itemDescription"
+        const val productKey = "PRODUCT_KEY"
     }
-
     private var product: ShoppingList? = null
 
     val itemImage : ImageView = itemView.findViewById(R.id.itemImage)
@@ -32,7 +31,7 @@ class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
         this.itemImage.setImageResource( data.itemImage!!)
         this.itemName.text = data.itemName
         this.itemPrice.text = data.itemPrice
-       // this.itemDescription.text = data.itemDescription
+        // this.itemDescription.text = data.itemDescription
     }
 
   /*  val intent = Intent(this, CarDetailActivity::class.java)

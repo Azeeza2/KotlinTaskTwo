@@ -23,19 +23,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun populate(): List<ShoppingList>{
         return listOf(
-            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" , ""),
-            ShoppingList(R.drawable.beans, "Beans",  "$12/bag" , ""),
-            ShoppingList(R.drawable.salt, "Salt", "$2/pack" , ""),
-            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "" ),
-            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" , ""),
-            ShoppingList(R.drawable.beans, "Beans",  "$12/bag", "" ),
-            ShoppingList(R.drawable.salt, "Salt",  "$2/pack", "" ),
-            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "" ),
-            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" , ""),
-            ShoppingList(R.drawable.rice, "Rice",  "$10/bag", "" ),
-            ShoppingList(R.drawable.beans, "Beans",  "$12/bag", "" ),
-            ShoppingList(R.drawable.salt, "Salt",  "$2/pack", "" ),
-            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "")
+            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" , "parboiled, polished"),
+            ShoppingList(R.drawable.beans, "Beans",  "$12/bag" , "destoned"),
+            ShoppingList(R.drawable.salt, "Salt", "$2/pack" , "iodized"),
+            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "non-bleached" ),
+            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" , "parboiled, polished"),
+            ShoppingList(R.drawable.beans, "Beans",  "$12/bag", "destoned" ),
+            ShoppingList(R.drawable.salt, "Salt",  "$2/pack", "iodized" ),
+            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "non-bleached" ),
+            ShoppingList(R.drawable.rice, "Rice",  "$10/bag", "parboiled, polished" ),
+            ShoppingList(R.drawable.beans, "Beans",  "$12/bag", "iodized" ),
+            ShoppingList(R.drawable.salt, "Salt",  "$2/pack", "non-bleached" ),
+            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "non-bleached")
         )
     }
    /* override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ShoppingListAdapter.Viewholder {
