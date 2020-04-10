@@ -2,6 +2,7 @@ package com.example.shoppinglist_kotlintask2
 
 import android.content.Intent
 import android.media.Image
+import android.os.Parcelable
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
@@ -20,7 +21,6 @@ class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
 
     val itemImage : ImageView = itemView.findViewById(R.id.itemImage)
     val itemName : TextView = itemView.findViewById(R.id.itemName)
-    val itemDescription : TextView = itemView.findViewById(R.id.itemDescription)
     val itemPrice : TextView = itemView.findViewById(R.id.itemPrice)
 
 
@@ -31,7 +31,7 @@ class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
         this.itemImage.setImageResource( data.itemImage!!)
         this.itemName.text = data.itemName
         this.itemPrice.text = data.itemPrice
-        this.itemDescription.text = data.itemDescription
+       // this.itemDescription.text = data.itemDescription
     }
 
     init {
@@ -43,6 +43,9 @@ class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
         }
     }
 
+}
+
+private fun Parcelable.putExtra(productKey: String, product: ShoppingList?) {
 }
 
 
