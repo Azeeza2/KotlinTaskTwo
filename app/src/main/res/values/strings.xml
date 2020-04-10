@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">ShoppingList - Kotlin Task 2</string>
+    <string name="app_name">Shopping List</string>
+    <string name="itemDescription" type="id">itemDescription</string>
+    <string name="itemImage" type="id">itemImage</string>
+    <string name="itemPrice" type="id">itemPrice</string>
+    <string name="itemName" type="id">itemName</string>
 </resources>

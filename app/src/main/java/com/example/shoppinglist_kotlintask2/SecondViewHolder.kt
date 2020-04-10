@@ -14,7 +14,7 @@ import kotlinx.android.synthetic.main.shopping_list_item.view.*
 class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
 
     companion object{
-        const val productKey = "PRODUCT_KEY"
+        const val productKey = "itemDescription"
     }
 
     private var product: ShoppingList? = null
@@ -22,6 +22,7 @@ class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
     val itemImage : ImageView = itemView.findViewById(R.id.itemImage)
     val itemName : TextView = itemView.findViewById(R.id.itemName)
     val itemPrice : TextView = itemView.findViewById(R.id.itemPrice)
+    val itemDescription: TextView = itemView.findViewById(R.id.itemDescription)
 
 
     fun bind(data: ShoppingList) {
@@ -34,6 +35,9 @@ class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
        // this.itemDescription.text = data.itemDescription
     }
 
+  /*  val intent = Intent(this, CarDetailActivity::class.java)
+    intent.putExtra(CAR, car)
+    startActivity(intent)*/
     init {
         itemView.setOnClickListener{
             val context = itemView.context
@@ -44,10 +48,6 @@ class SecondViewHolder (itemView: View) : RecyclerView.ViewHolder (itemView){
     }
 
 }
-
-private fun Parcelable.putExtra(productKey: String, product: ShoppingList?) {
-}
-
 
 
 

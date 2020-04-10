@@ -23,19 +23,19 @@ class MainActivity : AppCompatActivity() {
 
     private fun populate(): List<ShoppingList>{
         return listOf(
-            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" ),
-            ShoppingList(R.drawable.beans, "Beans",  "$12/bag" ),
-            ShoppingList(R.drawable.salt, "Salt", "$2/pack" ),
-            ShoppingList(R.drawable.palmoil, "PalmOil",  "$7/keg" ),
-            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" ),
-            ShoppingList(R.drawable.beans, "Beans",  "$12/bag" ),
-            ShoppingList(R.drawable.salt, "Salt",  "$2/pack" ),
-            ShoppingList(R.drawable.palmoil, "PalmOil",  "$7/keg" ),
-            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" ),
-            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" ),
-            ShoppingList(R.drawable.beans, "Beans",  "$12/bag" ),
-            ShoppingList(R.drawable.salt, "Salt",  "$2/pack" ),
-            ShoppingList(R.drawable.palmoil, "PalmOil",  "$7/keg" )
+            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" , ""),
+            ShoppingList(R.drawable.beans, "Beans",  "$12/bag" , ""),
+            ShoppingList(R.drawable.salt, "Salt", "$2/pack" , ""),
+            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "" ),
+            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" , ""),
+            ShoppingList(R.drawable.beans, "Beans",  "$12/bag", "" ),
+            ShoppingList(R.drawable.salt, "Salt",  "$2/pack", "" ),
+            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "" ),
+            ShoppingList(R.drawable.rice, "Rice",  "$10/bag" , ""),
+            ShoppingList(R.drawable.rice, "Rice",  "$10/bag", "" ),
+            ShoppingList(R.drawable.beans, "Beans",  "$12/bag", "" ),
+            ShoppingList(R.drawable.salt, "Salt",  "$2/pack", "" ),
+            ShoppingList(R.drawable.palmoil, "P-Oil",  "$7/keg", "")
         )
     }
    /* override fun onCreateViewHolder(p0: ViewGroup, p1: Int): ShoppingListAdapter.Viewholder {
